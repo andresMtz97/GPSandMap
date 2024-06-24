@@ -11,6 +11,8 @@
 		867471D12C1DEE2C001889F1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867471D02C1DEE2C001889F1 /* ContentView.swift */; };
 		867471D32C1DEE30001889F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867471D22C1DEE30001889F1 /* Assets.xcassets */; };
 		867471D62C1DEE30001889F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 867471D52C1DEE30001889F1 /* Preview Assets.xcassets */; };
+		867471DE2C1DEE91001889F1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 867471DD2C1DEE91001889F1 /* CoreLocation.framework */; };
+		867471E02C1DEF69001889F1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 867471DF2C1DEF69001889F1 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		867471D02C1DEE2C001889F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		867471D22C1DEE30001889F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		867471D52C1DEE30001889F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		867471DD2C1DEE91001889F1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		867471DF2C1DEF69001889F1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				867471DE2C1DEE91001889F1 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,7 @@
 			children = (
 				867471CD2C1DEE2C001889F1 /* GPSandMap */,
 				867471CC2C1DEE2C001889F1 /* Products */,
+				867471DC2C1DEE90001889F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +61,7 @@
 				867471D02C1DEE2C001889F1 /* ContentView.swift */,
 				867471D22C1DEE30001889F1 /* Assets.xcassets */,
 				867471D42C1DEE30001889F1 /* Preview Content */,
+				867471DF2C1DEF69001889F1 /* LocationManager.swift */,
 			);
 			path = GPSandMap;
 			sourceTree = "<group>";
@@ -65,6 +72,14 @@
 				867471D52C1DEE30001889F1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		867471DC2C1DEE90001889F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				867471DD2C1DEE91001889F1 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +154,7 @@
 			files = (
 				867471D12C1DEE2C001889F1 /* ContentView.swift in Sources */,
 				867471CF2C1DEE2C001889F1 /* GPSandMapApp.swift in Sources */,
+				867471E02C1DEF69001889F1 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +286,8 @@
 				DEVELOPMENT_TEAM = 567FDZM4P9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "para saber dónde estas";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "para saber dónde estas";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +317,8 @@
 				DEVELOPMENT_TEAM = 567FDZM4P9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "para saber dónde estas";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "para saber dónde estas";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
